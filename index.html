@@ -1,77 +1,51 @@
----
-layout: base
-title: Public Consultation on the review of the EU copyright rules
-language: en
----
-
-<div class="container">
-  <div class="jumbotron transparentotron">
-    <a class="pull-right" href="http://copyright4creativity.eu/">
-      <img src="{{ site.baseurl}}/img/c4c.png" alt="Coyright for Creativity">
-    </a>
-    <h1>Let's fix EU Copyright!</h1>
-    <p>
-      The EU will change copyright rules and your voice can make them better!<br/>
-      Just answer some questions and email a document.
-    </p>
-    <a href="{{ site.baseurl }}/en/" class="btn btn-default btn-lg">
-      <span class="flag flag-gb"></span>
-      Answer in English
-    </a>
-    <a href="{{ site.baseurl }}/de/" class="btn btn-default btn-lg">
-      <span class="flag flag-de"></span>
-      Antworte auf Deutsch
-    </a>
-    <p class="lead">
-      We have only <span id="days">some</span> days left to act!
-    </p>
-  </div>
-  <div class="row">
-    <div class="col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1">
-      <h3>Guide with focus on digital copyright</h3>
-      <a href="{{ site.baseurl }}/30c3/" class="btn btn-default">
-        <span class="flag flag-gb"></span>
-        Answer in English
-      </a>
-      <a href="{{ site.baseurl }}/30c3/de/" class="btn btn-default">
-        <span class="flag flag-de"></span>
-        Antworte auf Deutsch
-      </a>
-    </div>
-    <div class="col-lg-5 col-md-5">
-    </div>
-  </div>
-
-
-  <div class="row footer-row">
-    <div class="col-lg-12">
-      <hr/>
-      <div class="row">
-        <div class="col-lg-6">
-          <a href="https://github.com/okfde/eucopyright">Code on GitHub</a>
-        </div>
-        <div class="col-lg-6 text-right">
-          <a href="http://www.okfn.de/">
-            <img src="{{ site.baseurl}}/img/okf.png" alt="Open Knowledge Foundation Germany"/>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-(function(){
-  var _second = 1000;
-  var _minute = _second * 60;
-  var _hour = _minute * 60;
-  var _day = _hour * 24;
-  var end = new Date('02/05/2014 12:00 AM');
-  var now = new Date();
-  var distance = end - now;
-  var days = Math.floor(distance / _day);
-  var hours = Math.floor((distance % _day) / _hour);
-  var minutes = Math.floor((distance % _hour) / _minute);
-  var seconds = Math.floor((distance % _minute) / _second);
-  document.getElementById('days').innerHTML = '' + days;
-}());
-</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1187.39">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee}
+    span.s1 {text-decoration: underline}
+    span.s2 {font: 18.0px Times}
+    span.s3 {font: 11.0px 'Lucida Grande'; background-color: #c0c0c0}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>Public Consultation<br>
+on the review of the EU copyright rules</b></h1>
+<p class="p2"><br></p>
+<ul class="ul1">
+  <li class="li3"><span class="s1">Introduction</span></li>
+  <li class="li3"><span class="s1">Rights and the functioning of the Single Market</span></li>
+  <li class="li3"><span class="s1">Private copying and reprography</span></li>
+  <li class="li3"><span class="s1">Fair remuneration of authors and performers</span></li>
+  <li class="li3"><span class="s1">Respect for rights</span></li>
+  <li class="li3"><span class="s1">A single EU Copyright Title</span></li>
+  <li class="li3"><span class="s1">Other issues</span></li>
+</ul>
+<p class="p4">{% include en/intro.html %}</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 15.0px Times"><span class="s2"><b>Rights and the functioning of the Single Market <br>
+</b></span><b>Why is it not possible to access many online content services from anywhere in Europe?</b></h2>
+<p class="p4">{% include en/section_2a.html %} {% include en/section_2b.html %} {% include en/section_2c.html %} {% include en/section_2d.html %} {% include en/section_2e.html %}</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Limitations and exceptions in the Single Market</b></h2>
+<p class="p4">{% include en/section_3a.html %} {% include en/section_3b.html %} {% include en/section_3c.html %} {% include en/section_3d.html %} {% include en/section_3e.html %} {% include en/section_3f.html %}</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Private copying and reprography</b></h2>
+<p class="p4">{% include en/section_4.html %}</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Fair remuneration of authors and performers</b></h2>
+<p class="p4">{% include en/section_5.html %}</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Respect for rights</b></h2>
+<p class="p4">{% include en/section_6.html %}</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>A single EU Copyright Title</b></h2>
+<p class="p4">{% include en/section_7.html %}</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Other issues</b></h2>
+<p class="p4">{% include en/section_8.html %}</p>
+<p class="p4"><span class="s3">→ {{ page.downloadaction }} </span>{% include en/footnotes.html %}</p>
+<p class="p4">{% include en/download_modal.html %}</p>
+</body>
+</html>
