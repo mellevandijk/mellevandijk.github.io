@@ -1,0 +1,39 @@
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          {{ question.num }}.
+          {% if question.text[page.language] %}
+            {{ question.text[page.language]|newline_to_br }}
+          {% else %}
+            {{ question.text.en|newline_to_br }}
+          {% endif %}
+        </h3>
+      </div>
+      <div class="panel-body">
+        <blockquote class="guide" style="display:none" id="q-{{ question.num }}-customexplanation"></blockquote>
+        {% if question.type == 'multiple_choice' %}
+          {% for option in question.options %}
+            <div class="radio">
+              <label>
+                <input type="radio" name="q-{{ question.num }}" id="q-{{ question.num }}-{{ forloop.index0 }}" value="{{ forloop.index0 }}" class="save">
+                <strong>{% if page.language == 'en' %}{{ option.label }}{% else %}{{ site.data.translations[option.label][page.language] }}{% endif %}</strong>
+              </label>
+              {% if option.fulltext %}
+                <div class="radio-text help">
+                  <label for="q-{{ question.num }}-{{ forloop.index0 }}-text">
+                  {% if option.details[page.language] %}
+                    {{ option.details[page.language]|newline_to_br }}
+                  {% else %}
+                    {{ option.details.en|newline_to_br }}
+                  {% endif %}
+                  </label>
+                  <textarea class="form-control save" id="q-{{ question.num }}-{{ forloop.index0 }}-text"></textarea>
+                </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        {% elsif question.type == 'open_question' %}
+          <textarea class="form-control save" id="q-{{ question.num }}-text"></textarea>
+        {% endif %}
+      </div>
+    </div>
